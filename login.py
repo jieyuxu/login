@@ -13,7 +13,7 @@ def table_this():
 @app.route("/authenticate/", methods = ["POST"])
 def auth():
 	if request.form['user'] == usr and request.form['password'] == password:
-		return render_template("status.html", message="SUCCESS YOU LOGGED IN")
+		return render_template("status.html", message="SUCCESS! YOU'RE LOGGED IN")
 	return render_template("status.html", message="YOU FAILED TO LOGIN.")
     
 if __name__ == "__main__":
