@@ -45,8 +45,7 @@ def auth():
 	return render_template("status.html", message="YOU FAILED TO LOGIN.")
 
 if __name__ == "__main__":
-    #enable debugging, auto-restarting of server when this file is modified
-    app.debug = True 
+    #app.debug = True 
     app.run()
 
 
