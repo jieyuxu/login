@@ -41,7 +41,7 @@ def auth():
 		else:
 			with open('users.csv', 'a') as file:
 				file.write(user+','+passw+"\n")
-		return render_template('basicform.html', title="Login form", message="You're account was created.")
+		return render_template('basicform.html', title="Login form", message="Your account was created.")
 	return render_template("status.html", message="YOU FAILED TO LOGIN.")
 
 if __name__ == "__main__":
