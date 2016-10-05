@@ -9,7 +9,7 @@ datab = csv.reader(storage)
 L = []
 D = {}
 
-@app.route("/") 
+@app.route("/")
 @app.route("/login/", methods = ["POST", "GET"])
 def login():
 	return render_template('basicform.html', title="Login form")
