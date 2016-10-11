@@ -55,7 +55,8 @@ def welcome():
 
 @app.route("/logout/")
 def logout():
-	session.pop('user')
+	if 'user' in session:
+		session.pop('user')
 	return redirect(url_for("login"))
 
 if __name__ == "__main__":
